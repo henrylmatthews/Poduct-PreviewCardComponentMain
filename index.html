@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <style>
+/* Desktop Layout */
+@media only screen and (min-width: 500px) {
+  body {
+    background-color: rgb(241, 217, 184);
+}
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 16px 0px 11px 0px;
+}
+h2 {
+  font-family: Montserrat;
+  font-size: 2em;
+  color: black;
+  font-weight: 700;
+  margin: 11px 0px 11px 0px;
+
+}
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: gray;
+  line-height: 30px;
+  margin: auto;
+}
+h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: green;
+}
+h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: .4em;
+  color: gray;
+  position: relative;
+  top: 25px;
+  left: 30px;
+  margin-top: 27px;
+  text-decoration: line-through;
+}
+h6 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1em;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10%;
+  background-color: green;
+  padding: 20px;
+  width: 320px;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+}
+img {
+  border-radius: 15px 0px 0px 15px;
+  float: left;
+  height: 480px;
+
+}
+.center {
+  position: relative;
+  width: 28%;
+  left: 234px;
+}
+.pricing {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: green;
+  position: relative;
+  bottom: 15px;
+  display: flex;
+}
+.perform {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: auto;
+  border-radius: 25px;
+  background-color: rgb(230, 176, 111);
+  padding:10px;
+  box-sizing: content-box;
+  width: auto;
+  box-shadow: 0 30px 30px rgba(60, 40, 40, 0.05);
+  margin: auto;
+  position: relative;
+  top: 61px;
+}
+.perform-1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  border-radius: 0px 15px 15px 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px 20px 20px;
+  box-sizing: content-box;
+  width: 29%;
+  box-shadow: 0 30px 30px rgba(60, 40, 40, 0.05);
+  margin: auto;
+}
+
+
+
+
+}
+/* Mobile Layout */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(241, 217, 184);
+}
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 16px 0px 11px 0px;
+}
+h2 {
+  font-family: Montserrat;
+  font-size: 2em;
+  color: black;
+  font-weight: 700;
+  margin: 11px 0px 11px 0px;
+}
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: gray;
+  line-height: 30px;
+  margin: auto;
+}
+h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: green;
+}
+h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: .4em;
+  color: gray;
+  position: relative;
+  top: 25px;
+  left: 30px;
+  margin-top: 27px;
+  text-decoration: line-through;
+}
+h6 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1em;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10%;
+  background-color: green;
+  padding: 20px;
+  width: 320px;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+}
+img {
+  border-radius: 15px 15px 0px 0px;
+  max-height: 300px
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.pricing {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: green;
+  position: relative;
+  bottom: 15px;
+  display: flex;
+}
+.perform {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  border-radius: 25px;
+  background-color: rgb(230, 176, 111);
+  padding: 10px 10px 10px 10px;
+  box-sizing: content-box;
+  width: auto;
+  box-shadow: 0 30px 30px rgba(60, 40, 40, 0.05);
+  margin: auto;
+  position: relative;
+  top: 61px;
+}
+.perform-1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  border-radius: 0px 0px 15px 15px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px 20px 20px;
+  box-sizing: content-box;
+  width: auto;
+  box-shadow: 0 30px 30px rgba(60, 40, 40, 0.05);
+  margin: auto;
+}
+}
+  </style>
+</head>
+<body>
+ <div class="perform">
+  <img src="./images/image-product-desktop.jpg" height="500" class="center">
+  <div class="perform-1">
+  <h1>Perfume</h1>
+
+  <h2>Gabrielle Essence Eau De Parfum</h2>
+
+  <h3>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.</h3>
+<div class="pricing">
+  <h4>$149.99</h4>
+  <h5>$169.99</h5>
+</div>
+
+ <h6>Add to Cart</h6> 
+
+</div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+  </div>
+</body>
+</html>
